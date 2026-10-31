@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Compiler Pipeline Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Compiler Pipeline Simulator</h1>
+  <p>Mini project - Compiler Design. Write a small program and see the output of every compiler phase.</p>
+
+  <h3>Source Program</h3>
+  <textarea id="source" rows="7" cols="60"></textarea>
+  <br><br>
+  Examples:
+  <select id="examples" onchange="loadExample()">
+    <option value="0">Arithmetic</option>
+    <option value="1">Variables</option>
+    <option value="2">Error - undeclared variable</option>
+    <option value="3">Error - syntax</option>
+    <option value="4">Error - invalid character</option>
+  </select>
+  <button onclick="runCompiler()">Compile and Run</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
